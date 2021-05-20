@@ -11,7 +11,7 @@
 >>>git init:初始化
 
 >>> git remote add origin https://github.com/superf1yer/Java-learn-manuals.git
-
+--------------------------------------------------------------------------------------------
 >>>git status：查看本地发生的变化 
 
 >>>本地生效
