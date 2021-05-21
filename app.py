@@ -9,6 +9,10 @@ def index():
 def user_name(name):
     return "username: %s"% escape(name)
 
+@app.route('/<name>/<int:age>')
+def age(name, age):
+    return "username: %s, age : %d" % (name, age+20)
+    
 @app.route('/test')
 def test_url_for():
     print(url_for('index'))
@@ -16,3 +20,4 @@ def test_url_for():
     print(url_for('index', num=1))
     print(url_for('test_url_for'))
     return 'Test page'
+
